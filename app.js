@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const displayCurrentPlayer = document.querySelector("#current-player");
   let currentPlayer = 1;
 
+
   const winningArrays = [
     [0, 1, 2, 3],
     [41, 40, 39, 38],
@@ -76,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     [13, 20, 27, 34],
   ];
 
+  // Functions check if there are connected 4
   function checkBoard() {
     for (let y = 0; y < winningArrays.length; y++) {
       const square1 = squares[winningArrays[y][0]];
@@ -106,6 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // Function create gameplay
   for (let i = 0; i < squares.length; i++) {
     squares[i].onclick = () => {
       if (
@@ -128,6 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
+  // Block event listener if game is finished
   function finishGame() {
     for (let i = 0; i < squares.length; i++) {
       squares[i].onclick = () => {
