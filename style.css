@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: lightgrey;
+
+}
+
+.board {
+  width: 322px;
+  height: 252px;
+  padding: 10px;
+  background: blue;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 336px;
+  height: 264px;
+}
+
+.grid div {
+  width: 44px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.grid div.first {
+  border: none
+}
+
+
+.player-one {
+  background-color: red;
+
+}
+
+.player-two {
+  background-color: yellow;
+}
