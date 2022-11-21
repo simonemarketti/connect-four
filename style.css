@@ -3,8 +3,8 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: lightgrey;
-
+  min-height: 100vh;
+  background-color: #7eaba4;
 }
 
 .board {
